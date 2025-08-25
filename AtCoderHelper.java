@@ -297,7 +297,7 @@ public class AtCoderHelper {
     private static List<TestCase> detectSamples(String html) {
         // cut all text after "lang-en" to avoid data duplication and translate html
         // special characters
-        String target = translateHtmlSpecialCharacters(html.substring(0, html.indexOf("lang-en")));
+        String target = translateHtmlSpecialCharacters(html.substring(html.indexOf("入力例"), html.indexOf("lang-en")));
 
         // find <pre>test case here</pre>
         Pattern p = Pattern.compile("<pre>(?:(?!</pre>)(?!<var>)[\\S\\s])*</pre>");

@@ -60,7 +60,7 @@ You can get assertion results and elapsed time of each samples from standard out
 This tool don't have commands or input parameters.
 
 ## notes
-- AtCoderHelper will automatically detect sample inputs and outputs but its detection logic is very simple, so will fail in some tasks. (ex. some old contests like before abc013, when there were some different ways of using html "\<pre\>" tag like abc411_d, or maybe some interactive tests)
+- AtCoderHelper will automatically detect sample inputs and outputs but its detection logic is very simple, so will fail in some tasks. (ex. some old contests like before abc013 or maybe some interactive tests)
 - Since AtCoderHelper doesn't login to AtCoder and AtCoder requires login to access to task pages during contests, sample downloading funtionality is unavailable during a contest is being held. \
   (I won't implement login process, but thinking of creating a Chrome extension which helps downloading samples.)
 - Assertion of TestExecutor is very simple, only one difference of whitespace will make it fail. \
